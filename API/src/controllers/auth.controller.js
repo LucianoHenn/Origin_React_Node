@@ -1,4 +1,3 @@
-import { getConnection } from "./../database/database";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import authConfig from "../config/auth.config";
