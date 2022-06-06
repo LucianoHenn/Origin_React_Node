@@ -19,3 +19,5 @@ Copia las variables del arcvhi .env.example y pegalas en un nuevo archivo .env
 ### `SECRET=secret`
 
 <hr/>
+
+### `finalmente levantar el servidor node con el comando: npm run dev"
