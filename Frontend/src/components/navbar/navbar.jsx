@@ -35,9 +35,24 @@ export const NavBar = (props) => {
           </h1>
         </Col>
         <Col>
-          <Button onClick={handleLogOut} type="primary">
-            Logout
-          </Button>
+          {!props.isLoginPage ? (
+            <>
+              <h2
+                style={{
+                  color: "rgb(24, 144, 255)",
+                  display: "inline",
+                  marginRight: "30px",
+                }}
+              >
+                Hola, {JSON.parse(localStorage.getItem("user")).name}
+              </h2>
+              <Button onClick={handleLogOut} type="primary">
+                Logout
+              </Button>
+            </>
+          ) : (
+            ""
+          )}
         </Col>
       </Row>
     </Header>
